@@ -8,8 +8,10 @@ plugins:
 
 #-------------------------------
 # General Site Settings
-title: Johnny Hopkins
-description: "Hi I'm Johnny, and I'm a Data Scientist.  My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
+title: Aprajita Singh
+description: "Hi, I am Aprajita and I am a Mathematics PhD turned data scientist who builds solutions that drive strategic business decisions. My portfolio focusses on projects that solve real problems with measurable impact - turning complex data into clear insights that leadership can actually use. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!
+
+ "
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
