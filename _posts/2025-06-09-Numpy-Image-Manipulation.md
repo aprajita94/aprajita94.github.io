@@ -18,8 +18,7 @@ from skimage import io
 import matplotlib.pyplot as plt
 ```
 
-We now bring in the image that we want to work with. The image is camaro.jpg. We read the image into a variable and print it. Lo and behold! 
-As expected, our variable is a 3D array. We can verify this using the shape function. 
+We now bring in the image that we want to work with. The image is camaro.jpg. We read the image into a variable and print it. Lo and behold! As expected, our variable is a 3D array. We can verify this using the shape function. 
 
 ```python
 camaro = io.imread("camaro.jpg")
@@ -27,6 +26,16 @@ print(camaro)
 camaro.shape
 ```
 The shape is returned to be 1200 by 1600 by 3. We see that the image variable has 3 dimensions and that it is wider than it is tall. The value of 3 in the third dimension corresponds to the three channels - red, green and blue.  
+
+# Cropping the image
+Let’s first start by cropping the image. Let’s say we only want some part of the top of the image. So let’s say we do the following:
+
+```python 
+cropped = camaro[0:500,:,:] # Crop along the y-axis
+plt.imshow(cropped)
+plt.show()
+```
+
  
 
 The smallest true Prime number is 2, so we want to start by creating a list of numbers that need checking so every integer between 2 and what we set above as the upper bound which in this case was 20. We use n+1 as the range logic is not inclusive of the upper limit we set there
