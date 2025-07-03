@@ -36,7 +36,7 @@ Here is what the image looks like:
 The shape is returned to be 1200 by 1600 by 3. We see that the image variable has 3 dimensions and that it is wider than it is tall. The value of 3 in the third dimension corresponds to the three channels - red, green and blue.  
 
 # Cropping the image
-Let’s first start by cropping the image. Let’s say we only want some part of the top of the image. So let’s say we do the following:
+Let’s first start by cropping the image. Let’s say we only want some part of the top of the image. So we do the following:
 
 ```python 
 cropped = camaro[0:500,:,:] # Crop along the y-axis
@@ -44,8 +44,37 @@ plt.imshow(cropped)
 plt.show()
 ```
 <br>
+![alt text](/img/posts/camaro_bottom_cropped.png "Bottom of the image cropped out of the original image")
+<br>
+
+Let’s do something similar, let’s crop out the right hand side of the image as such:
+```python
+cropped = camaro[:,400:1000,:] # Crop along the x-axis
+plt.imshow(cropped)
+plt.show()
+```
+We get the following:
+<br>
+![alt text](/img/posts/camaro_side_cropped.png “Right side of the image cropped out of the original image")
+<br>
+That looks like it worked! 
+Let us now crop the camaro out of its environment!
+
+```python
+cropped = camaro[350:1100,200:1400,:] # Crop out the car
+plt.imshow(cropped)
+plt.show()
+
+
+io.imsave("camaro_cropped.jpg", cropped)
+```
+That gives us the following image:
+<br>
 ![alt text](/img/posts/camaro_cropped.jpg "Camaro cropped out of the original image")
 <br>
+The final command in the above code snippet is used to save the image file. 
+
+
 
  
 
