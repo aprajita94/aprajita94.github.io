@@ -25,6 +25,14 @@ camaro = io.imread("camaro.jpg")
 print(camaro)
 camaro.shape
 ```
+
+Here is what the image looks like:
+
+<br>
+![alt text](/img/posts/camaro.jpg "Camaro image")
+<br>
+
+
 The shape is returned to be 1200 by 1600 by 3. We see that the image variable has 3 dimensions and that it is wider than it is tall. The value of 3 in the third dimension corresponds to the three channels - red, green and blue.  
 
 # Cropping the image
@@ -35,6 +43,9 @@ cropped = camaro[0:500,:,:] # Crop along the y-axis
 plt.imshow(cropped)
 plt.show()
 ```
+<br>
+![alt text](/img/posts/camaro_cropped.jpg "Camaro cropped out of the original image")
+<br>
 
  
 
