@@ -85,7 +85,7 @@ plt.show()
 io.imsave("Camaro_vertical_flip.jpg", vertical_flip)
 ```
 <br>
-![alt text](/img/posts/Camaro_vertical.jpg "Camaro cropped out of the original image")
+![alt text](/img/posts/Camaro_vertical_flip.jpg "Camaro image flipped vertically")
 <br>
 
 Let us now flip the image horizontally:
