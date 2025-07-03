@@ -55,7 +55,7 @@ plt.show()
 ```
 We get the following:
 <br>
-![alt text](/img/posts/camaro_side_cropped.png "Bottom of the image cropped out of the original image")
+![alt text](/img/posts/camaro_side_cropped.png "Side of the image cropped out of the original image" )
 <br>
 That looks like it worked! 
 Let us now crop the camaro out of its environment!
@@ -64,8 +64,6 @@ Let us now crop the camaro out of its environment!
 cropped = camaro[350:1100,200:1400,:] # Crop out the car
 plt.imshow(cropped)
 plt.show()
-
-
 io.imsave("camaro_cropped.jpg", cropped)
 ```
 That gives us the following image:
@@ -74,6 +72,35 @@ That gives us the following image:
 <br>
 The final command in the above code snippet is used to save the image file. 
 
+# Flipping the image
+ 
+In this section, let us try flipping our image.  Let us first flip the image vertically:
+
+```python
+# Vertical flip
+vertical_flip = camaro[::-1,:,:] # Uses the start, stop, step logic (step = -1)
+plt.imshow(vertical_flip)
+plt.show()
+
+io.imsave("Camaro_vertical_flip.jpg", vertical_flip)
+```
+<br>
+![alt text](/img/posts/Camaro_vertical.jpg "Camaro cropped out of the original image")
+<br>
+
+Let us now flip the image horizontally:
+
+```python
+# Horizontal flip
+horizontal_flip = camaro[:,::-1,:] 
+plt.imshow(horizontal_flip)
+plt.show()
+
+io.imsave("Camaro_horizontal_flip.jpg", horizontal_flip)
+```
+<br>
+![alt text](/img/posts/Camaro_horizontal_flip.jpg "Camaro image flipped horizontally")
+<br>
 
 
  
