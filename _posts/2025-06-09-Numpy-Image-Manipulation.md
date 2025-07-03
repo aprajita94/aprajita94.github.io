@@ -1,9 +1,9 @@
-\---  
+---  
 layout: post  
 title: Manipulating an image using Numpy   
-image: "/posts/finding-primes-title-img.png"  
-tags: \[Python, Image, Numpy\]  
-\---  
+image: "/posts/primes_image.jpeg"  
+tags: [Python, Image, Numpy]  
+---  
 In this post, I am going to show a few different image manipulation tricks. It is fun to see that any colored image can be represented by a 3-dimensional matrix. Each index with row and column number corresponds to a pixel point and each dimension corresponds to a color channel \- red, green or blue. We remember that these are the primary colors that make all the other colors. So, one can think of each pixel in an image to be made of a certain combination of red, green and blue color. Therefore, we can think of an image in terms of a Numpy array that we can perform a whole lot of operations on\!    
 
 Let's get into it\!
