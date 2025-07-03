@@ -55,7 +55,7 @@ plt.show()
 ```
 We get the following:
 <br>
-![alt text](/img/posts/camaro_side_cropped.png “Right side of the image cropped out of the original image")
+![alt text](/img/posts/camaro_side_cropped.png "Bottom of the image cropped out of the original image")
 <br>
 That looks like it worked! 
 Let us now crop the camaro out of its environment!
